@@ -105,7 +105,7 @@
   }
 }
 
-@media (min-width: $screen-lg-min) {
+/*@media (min-width: $screen-lg-min) {
   @include responsive-visibility('.visible-lg');
 }
 .visible-lg-block {
@@ -122,7 +122,7 @@
   @media (min-width: $screen-lg-min) {
     display: inline-block !important;
   }
-}
+}*/
 
 @media (max-width: $screen-xs-max) {
   @include responsive-invisibility('.hidden-xs');
