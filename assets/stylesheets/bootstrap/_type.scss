@@ -75,9 +75,13 @@ p {
 // -------------------------
 
 // Ex: (12px small font / 14px base font) * 100% = about 85%
+@mixin small {
+  font-size: floor((100% * $font-size-small / $font-size-base));
+}
+
 small,
 .small {
-  font-size: floor((100% * $font-size-small / $font-size-base));
+  @include small;
 }
 
 mark,
@@ -87,11 +91,16 @@ mark,
 }
 
 // Alignment
-.text-left           { text-align: left; }
-.text-right          { text-align: right; }
-.text-center         { text-align: center; }
-.text-justify        { text-align: justify; }
-.text-nowrap         { white-space: nowrap; }
+@mixin text-left     { text-align: left; }
+.text-left           { @include text-left; }
+@mixin text-right    { text-align: right; }
+.text-right          { @include text-right; }
+@mixin text-center   { text-align: center; }
+.text-center         { @include text-center; }
+@mixin text-justify  { text-align: justify; }
+.text-justify        { @include text-justify; }
+@mixin text-nowrap   { white-space: nowrap; }
+.text-nowrap         { @include text-nowrap; }
 
 // Transformation
 .text-lowercase      { text-transform: lowercase; }
@@ -99,8 +108,12 @@ mark,
 .text-capitalize     { text-transform: capitalize; }
 
 // Contextual colors
-.text-muted {
+@mixin text-muted {
   color: $text-muted;
+}
+
+.text-muted {
+  @include text-muted;
 }
 
 @include text-emphasis-variant('.text-primary', $brand-primary);

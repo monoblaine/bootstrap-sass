@@ -111,7 +111,7 @@ output {
 // input[type="tel"]
 // input[type="color"]
 
-.form-control {
+@mixin form-control {
   display: block;
   width: 100%;
   height: $input-height-base; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
@@ -155,12 +155,14 @@ output {
     cursor: $cursor-disabled;
   }
 
-  // [converter] extracted textarea& to textarea.form-control
+  // Reset height for `textarea`s
+  @at-root textarea#{&} {
+    height: auto;
+  }
 }
 
-// Reset height for `textarea`s
-textarea.form-control {
-  height: auto;
+.form-control {
+  @include form-control;
 }
 
 
