@@ -306,7 +306,7 @@ input[type="checkbox"] {
 // Apply class to a `p` element to make any string of text align with labels in
 // a horizontal form layout.
 
-.form-control-static {
+@mixin form-control-static {
   // Size it appropriately next to real form controls
   padding-top: ($padding-base-vertical + 1);
   padding-bottom: ($padding-base-vertical + 1);
@@ -321,6 +321,9 @@ input[type="checkbox"] {
   }
 }
 
+.form-control-static {
+  @include form-control-static;
+}
 
 // Form control sizing
 //
