@@ -6,7 +6,7 @@
 // Base styles
 // -------------------------
 
-.alert {
+@mixin alert {
   padding: $alert-padding;
   margin-bottom: $line-height-computed;
   border: 1px solid transparent;
@@ -33,6 +33,10 @@
   > p + p {
     margin-top: 5px;
   }
+}
+
+.alert {
+  @include alert;
 }
 
 // Dismissible alerts
