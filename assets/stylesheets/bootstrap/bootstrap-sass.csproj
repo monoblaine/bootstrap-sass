@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(SolutionDir)\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('$(SolutionDir)\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(SolutionDir)\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('$(SolutionDir)\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion></ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{52BAFB18-6FBB-45AC-B5E8-30D0C7095806}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>bootstrap-sass</RootNamespace>
+    <AssemblyName>bootstrap-sass</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp></NuGetPackageImportStamp>
+    <AutoConvertHintPath>true</AutoConvertHintPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="mixins\_alerts.scss" />
+    <Content Include="mixins\_background-variant.scss" />
+    <Content Include="mixins\_border-radius.scss" />
+    <Content Include="mixins\_buttons.scss" />
+    <Content Include="mixins\_center-block.scss" />
+    <Content Include="mixins\_clearfix.scss" />
+    <Content Include="mixins\_forms.scss" />
+    <Content Include="mixins\_gradients.scss" />
+    <Content Include="mixins\_grid-framework.scss" />
+    <Content Include="mixins\_grid.scss" />
+    <Content Include="mixins\_hide-text.scss" />
+    <Content Include="mixins\_image.scss" />
+    <Content Include="mixins\_labels.scss" />
+    <Content Include="mixins\_list-group.scss" />
+    <Content Include="mixins\_nav-divider.scss" />
+    <Content Include="mixins\_nav-vertical-align.scss" />
+    <Content Include="mixins\_opacity.scss" />
+    <Content Include="mixins\_pagination.scss" />
+    <Content Include="mixins\_panels.scss" />
+    <Content Include="mixins\_progress-bar.scss" />
+    <Content Include="mixins\_reset-filter.scss" />
+    <Content Include="mixins\_reset-text.scss" />
+    <Content Include="mixins\_resize.scss" />
+    <Content Include="mixins\_responsive-visibility.scss" />
+    <Content Include="mixins\_size.scss" />
+    <Content Include="mixins\_tab-focus.scss" />
+    <Content Include="mixins\_table-row.scss" />
+    <Content Include="mixins\_text-emphasis.scss" />
+    <Content Include="mixins\_text-overflow.scss" />
+    <Content Include="mixins\_vendor-prefixes.scss" />
+    <Content Include="_alerts.scss" />
+    <Content Include="_badges.scss" />
+    <Content Include="_breadcrumbs.scss" />
+    <Content Include="_button-groups.scss" />
+    <Content Include="_buttons.scss" />
+    <Content Include="_carousel.scss" />
+    <Content Include="_close.scss" />
+    <Content Include="_code.scss" />
+    <Content Include="_component-animations.scss" />
+    <Content Include="_dropdowns.scss" />
+    <Content Include="_forms.scss" />
+    <Content Include="_glyphicons.scss" />
+    <Content Include="_grid.scss" />
+    <Content Include="_input-groups.scss" />
+    <Content Include="_jumbotron.scss" />
+    <Content Include="_labels.scss" />
+    <Content Include="_list-group.scss" />
+    <Content Include="_media.scss" />
+    <Content Include="_mixins.scss" />
+    <Content Include="_modals.scss" />
+    <Content Include="_navbar.scss" />
+    <Content Include="_navs.scss" />
+    <Content Include="_normalize.scss" />
+    <Content Include="_pager.scss" />
+    <Content Include="_pagination.scss" />
+    <Content Include="_panels.scss" />
+    <Content Include="_popovers.scss" />
+    <Content Include="_print.scss" />
+    <Content Include="_progress-bars.scss" />
+    <Content Include="_responsive-embed.scss" />
+    <Content Include="_responsive-utilities.scss" />
+    <Content Include="_scaffolding.scss" />
+    <Content Include="_tables.scss" />
+    <Content Include="_theme.scss" />
+    <Content Include="_thumbnails.scss" />
+    <Content Include="_tooltip.scss" />
+    <Content Include="_type.scss" />
+    <Content Include="_utilities.scss" />
+    <Content Include="_variables.scss" />
+    <Content Include="_wells.scss" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>8900</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:8900/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('$(SolutionDir)\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
