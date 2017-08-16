@@ -18,3 +18,8 @@ test/dummy_rails/public/assets/
 .DS_Store
 node_modules
 /.idea
+
+# Ignore vs-generated files
+*.user
+obj
+bin
