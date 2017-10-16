@@ -8,6 +8,15 @@
     background-color: $heading-bg-color;
     border-color: $heading-border;
 
+    &.clickable {
+      cursor: pointer;
+      transition: background-color 300ms ease;
+
+      &:hover {
+        background-color: darken($heading-bg-color, 5%);
+      }
+    }
+
     + .panel-collapse > .panel-body {
       border-top-color: $border;
     }
