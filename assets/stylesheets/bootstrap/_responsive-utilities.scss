@@ -24,6 +24,10 @@
   }
 }
 
+// https://stackoverflow.com/a/19706857/1396155
+body {
+  -ms-overflow-style: scrollbar;
+}
 
 // Visibility utilities
 // Note: Deprecated .visible-xs, .visible-sm, .visible-md, and .visible-lg as of v3.2.0
