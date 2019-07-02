@@ -3,20 +3,23 @@
 @mixin pagination-size($padding-vertical, $padding-horizontal, $font-size, $line-height, $border-radius) {
   > li {
     > a,
-    > span {
+    > span,
+    > button {
       padding: $padding-vertical $padding-horizontal;
       font-size: $font-size;
       line-height: $line-height;
     }
     &:first-child {
       > a,
-      > span {
+      > span,
+      > button {
         @include border-left-radius($border-radius);
       }
     }
     &:last-child {
       > a,
-      > span {
+      > span,
+      > button {
         @include border-right-radius($border-radius);
       }
     }
