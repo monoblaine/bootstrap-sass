@@ -12,7 +12,8 @@
   li {
     display: inline;
     > a,
-    > span {
+    > span,
+    > button {
       display: inline-block;
       padding: 5px 14px;
       background-color: $pager-bg;
@@ -21,7 +22,9 @@
     }
 
     > a:hover,
-    > a:focus {
+    > a:focus,
+    > button:hover,
+    > button:focus {
       text-decoration: none;
       background-color: $pager-hover-bg;
     }
@@ -29,14 +32,16 @@
 
   .next {
     > a,
-    > span {
+    > span,
+    > button {
       float: right;
     }
   }
 
   .previous {
     > a,
-    > span {
+    > span,
+    > button {
       float: left;
     }
   }
@@ -45,7 +50,10 @@
     > a,
     > a:hover,
     > a:focus,
-    > span {
+    > span,
+    > button,
+    > button:hover,
+    > button:focus {
       color: $pager-disabled-color;
       background-color: $pager-bg;
       cursor: $cursor-disabled;
