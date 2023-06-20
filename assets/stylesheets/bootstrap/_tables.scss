@@ -116,6 +116,12 @@ th {
   }
 }
 
+.table-striped2 {
+  > tbody > tr:nth-of-type(odd) {
+    background-color: $table-bg-accent2;
+  }
+}
+
 
 // Hover effect
 //
