@@ -186,7 +186,7 @@ table {
     border: 1px solid $table-border-color;
 
     // Tighten up spacing
-    > .table {
+    > .table:not(.do-not-handle-wrap) {
       margin-bottom: 0;
 
       // Ensure the content doesn't wrap
